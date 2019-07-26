@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="FirstTempCss.css">
+</head>
+<body>
+
+
+		<style>
+				ul {
+				  list-style-type: none;
+				  margin: 0;
+				  padding: 0;
+				  overflow: hidden;
+				  background-color: #333;
+				}
+				
+				li {
+				  float: left;
+				}
+				
+				li a {
+				  display: block;
+				  color: white;
+				  text-align: center;
+				  padding: 14px 16px;
+				  text-decoration: none;
+				}
+				
+				li a:hover:not(.active) {
+				  background-color: #111;
+				}
+				
+				.active {
+				  background-color: #4CAF50;
+				}
+				</style>
+				</head>
+				<body>
+				
+				<ul>
+				  <li><a class="active" href="#home">Home</a></li>
+				  <li><a href="#admin">Admin</a></li>
+				  <li><a href="#ngo">NGO</a></li>
+				  <li><a href="#contact">Contact Us</a></li>
+				  <li><a href="#volunteer">Volunteer</a></li>
+				  <li><a href="#about">About</a></li>
+				  <li class="hide-small dropdown-hover">
+						<a href="javascript:void(0)" class="active" title="More">Help <i class="fa fa-caret-down"></i></a>     
+							
+					</li>
+				</ul>
+				
+     <!--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+ <!--Navigation bar
+ <div class="top-navbar">
+	<ul class="navbar black card-2 left-align">
+		<li class="hide-medium hide-large opennav right">
+		<a class="padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+		</li>
+		<li><a href="#" class="hover-none hover-text-grey padding-large">HOME</a></li>
+		<li class="hide-small"><a href="#admin" class="padding-large">Admin</a></li>
+		<li class="hide-small"><a href="#ngo" class="padding-large">NGO</a></li>
+        <li class="hide-small"><a href="#volunteer" class="padding-large">Volunteer</a></li>
+        <li class="hide-small"><a href="#contact" class="padding-large">Contact Us</a></li>
+		<li class="hide-small dropdown-hover">
+		<a href="javascript:void(0)" class="hover-none padding-large" title="More">Help <i class="fa fa-caret-down"></i></a>     
+			<div class="dropdown-content white card-4">
+				<a href="#">Signup Process</a>
+				<a href="#">FAQ</a>
+				
+			</div>
+		</li>
+		<li class="hide-small right"><a href="javascript:void(0)" class="padding-large hover-red"><i class="fa fa-search"></i></a></li>
+	</ul>
+</div>
+
+ Navbar on small screens 
+<div id="navDemo" class="hide hide-large hide-medium top" style="margin-top:46px">
+	<ul class="navbar left-align black">
+		<li><a class="padding-large" href="#admin">Admin</a></li>
+		<li><a class="padding-large" href="#ngo">NGO</a></li>
+		<li><a class="padding-large" href="#contact">CONTACT Us</a></li>
+		<li><a class="padding-large" href="#volunteer">Volunteer</a></li>
+	</ul>
+</div>
+-->
+
+<!-- Automatic Slideshow Images -->
+<div class="mySlides display-container center">
+	<img src="image1.jpg" style="width:100% ; height:20%" />
+		<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+		</div>
+</div>
+
+<div class="mySlides w3-display-container w3-center">
+	<img src="image2.png" style="width:100%">
+		<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+			
+		</div>
+</div>
+
+<div id="signin">
+		<i class="fa fa-user" style="font-size:24px">Signup/Register</i>
+</div>
+
+  <!--JavaScript for Slideshow-->
+  <script>
+	//Automatic Slideshow - change image every 4 seconds
+   var myIndex = 0;
+   imageSlide();
+   
+   function imageSlide() {
+	   var i;
+	   var x = document.getElementsByClassName("mySlides");
+	   for (i = 0; i < x.length; i++) {
+		  x[i].style.display = "none";  
+	   }
+	   myIndex++;
+	   if (myIndex > x.length) {myIndex = 1}    
+	   x[myIndex-1].style.display = "block";  
+	   setTimeout(imageSlide, 2000);    
+   }
+	</script>
+
+ 
+</body>
+</html>
